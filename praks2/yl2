@@ -1,0 +1,8 @@
+#!/bin/bash
+# skript 2 oma andmetega
+echo "Sander Luts" #väljastab nime
+echo "ISP217" #väljastab õppegrupi
+echo "normaalne aine"
+echo "yes"
+#
+

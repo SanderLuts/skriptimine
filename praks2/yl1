@@ -1,9 +1,12 @@
 #!/bin/bash
 #
-# tervitusskript
+# kasutaja tervitus
 #
-echo -n "Tere, " # väljasta ilma reavahetuseta Tere,
-echo -n "User" #väljasta ilma reavahetuseta User
+# skripti algus
+# echo "Tere User!"
+echo -n  "Tere, " # väljasta ilma reavahetuseta Tere,
+echo -n `whoami | cut -c1 | tr [:lower:] [:upper:]`  #väljasta ilma reavahetuseta User
+echo -n `whoami | cut -c2-`
 echo "!" #väljasta ! ja tee reavahetus
 #
 # skripti lõpp

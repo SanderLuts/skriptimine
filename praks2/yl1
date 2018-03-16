@@ -5,8 +5,8 @@
 # skripti algus
 # echo "Tere User!"
 echo -n  "Tere, " # väljasta ilma reavahetuseta Tere,
-echo -n `whoami | cut -c1 | tr [:lower:] [:upper:]`  #väljasta ilma reavahetuseta User
-echo -n `whoami | cut -c2-`
+echo -n `whoami | cut -c1 | tr [:lower:] [:upper:]`  #väljasta ilma reavahetuseta kasutajanime esimene täht ja teeb selle suureks
+echo -n `whoami | cut -c2-` # lisab ülejäänud kasutajanime
 echo "!" #väljasta ! ja tee reavahetus
 #
 # skripti lõpp

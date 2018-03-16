@@ -1,8 +1,12 @@
 #!/bin/bash
-# skript 2 oma andmetega
-echo "Sander Luts" #väljastab nime
-echo "ISP217" #väljastab õppegrupi
-echo "normaalne aine"
-echo "yes"
 #
+# skript 2 oma andmetega
+#
+# skripti algus
+who | cut -f1 -d" " | cut -f2 -d"." > perenimi #lõikab perenime mis on 2-ne peale punkti ja salvestab
+who | cut -f1 -d" " | cut -f1 -d"." > eesnimi #lõikab eesnime ja salvestab
+paste -d"." perenimi eesnimi > nimed #kleebivad kokku
+cat nimed | sort | uniq # sorteerib väljundi ja korduvad eemaldab
+#
+# skripti lõpp
 

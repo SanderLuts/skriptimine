@@ -3,7 +3,8 @@
 # skript 2 oma andmetega
 #
 # skripti algus
-echo "Today is " `date +"%A, %B %d, %Y"` #Väljastab tänase kuupäeva
-echo "Time is "`date +"%H:%M"` #Väljastab hetke kellaaja
+echo  "Today is " `date +"%A, %B %d, %Y"` #Väljastab tänase kuupäeva
+echo  "Time is "`date +"%H:%M"` #Väljastab hetke kellaaja
+cal #Väljastab hetke kuu kalendri
 # skripti lõpp
 

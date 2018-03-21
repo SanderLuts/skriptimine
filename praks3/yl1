@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# skript 2 oma andmetega
+#
+# skripti algus
+echo "Today is " `date +"%A, %B %d, %Y"` #Väljastab tänase kuupäeva
+echo "Time is "`date +"%H:%M"` #Väljastab hetke kellaaja
+# skripti lõpp
+

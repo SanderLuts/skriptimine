@@ -1,0 +1,6 @@
+#!/bin/bash
+# skripti algus
+echo -n "Sisesta oma ees ja perenimi: " #küsib kasutajalt ees ja perenime
+read eesnimi perenimi #annab kasutajale valiku et sisestada andmeid
+echo "Sinu eesnimi on $eesnimi ja perenimi on $perenimi" # väljastab lause kus on sisestatud andmed
+#skripti lõpp

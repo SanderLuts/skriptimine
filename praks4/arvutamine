@@ -1,0 +1,10 @@
+#!/bin/bash
+#skripti algus
+echo -n "sisesta aluskandiku pikkus cm-tes: "
+read pikkus
+echo -n "sisesta aluskandiku laius cm-tes: "
+read laius
+echo -n "kandiku pindala on: "
+expr $pikkus \* $laius
+echo -n " cm"
+#skripti lõpp

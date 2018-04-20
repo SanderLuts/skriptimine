@@ -1,15 +1,15 @@
 #!/bin/bash
 #skripti algus
-echo "Sisesta reisijate arv: "
+echo "Sisesta reisijate arv: " #mitu reisijat
 read reisijad
-echo "Mitu inimest mahub bussi?: "
+echo "Mitu inimest mahub bussi?: " #mitu kohta bussis?
 read kohad
-bussiarv=`expr $reisijad / $kohad`
-ylejaanud1=`expr $bussiarv \* $kohad`
-ylejaanud2=`expr $reisijad - $ylejaanud1`
-if [ $ylejaanud2 -ne 0 ]
+bussiarv=`expr $reisijad / $kohad` #arvutab
+ylejaanud1=`expr $bussiarv \* $kohad` #arvutab
+ylejaanud2=`expr $reisijad - $ylejaanud1` #arvutab
+if [ $ylejaanud2 -ne 0 ] #kui maha jääks rohkem kui 0 inimest
 then
-bussiarv=`expr $bussiarv + 1`
+bussiarv=`expr $bussiarv + 1` #võtame veel busse
 fi
-echo "Teil on vaja " $bussiarv " bussi!"
+echo "Teil on vaja " $bussiarv " bussi!" #no ikka võtab bussi
 #skripti lõpp

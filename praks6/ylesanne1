@@ -1,11 +1,9 @@
 #!/bin/bash
 #skripti algus
-echo "Sisesta suvaline täisarv: "
-read nummer
-if [ $(($nummer % 2)) -eq 0 ]
+if [ $(($1 % 2)) -eq 0 ]
 then
-echo $nummer "on paariarv!"
+echo $1 "on paariarv!"
 else
-echo $nummer "on paaritu!"
+echo $1 "on paaritu!"
 fi
 #skripti lõpp

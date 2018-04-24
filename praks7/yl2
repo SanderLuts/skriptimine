@@ -14,5 +14,8 @@ echo "praegu on suvi"
 elif test $kuu -ge 9 -a $kuu -le 11
 then
 echo "praegu on sügis"
+elif test $kuu -ge 13 -o $kuu  -le 0
+then
+echo "seda kuud ei ole kalendris, proovi uuesti"
 fi
 

@@ -1,0 +1,20 @@
+#!/bin/bash
+#skripti algus
+echo "Mis kell on?"
+read kell
+if [ $kell -ge 6 -a $kell -lt 12 ]
+then
+echo "Tere hommikust!"
+elif [ $kell -ge 12 -a $kell -lt 18 ]
+then
+echo "Tere päevast!"
+elif [ $kell -ge 18 -a $kell -lt 22 ]
+then
+echo "Tere õhtust!"
+elif [  $kell -ge 22 -a $kell -lt 25 ] || [ $kell -ge 0 -a $kell -lt 6  ]
+then
+echo "Head ööd!"
+else
+echo "Vale sisend, proovi uuesti"
+fi
+

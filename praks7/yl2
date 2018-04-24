@@ -4,7 +4,7 @@ echo "sisesta kuu number: "
 read kuu
 if test $kuu -eq 12 -o $kuu -eq 1 -o $kuu -eq 2
 then
-echo "pragu on talv"
+echo "praegu on talv"
 elif test $kuu -ge 3 -a $kuu -le 5
 then
 echo "praegu on kevad"

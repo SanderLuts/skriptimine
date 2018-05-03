@@ -1,0 +1,11 @@
+#!/bin/bash
+#skripti algus
+echo "sisesta täisarv: "
+read number
+while [ $number -ne 0 ]
+do
+jaak=$(( $number % 10 ))
+summa=$(( $summa + $jaak ))
+number=$(( $number / 10 ))
+done
+echo $summa

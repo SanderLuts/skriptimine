@@ -1,0 +1,11 @@
+#!/bin/bash
+#skripti algus
+echo "pühapäev = 0; esmaspäev = 1; ..... ; laupäev = 6"
+echo -n "Kuna lähed?: "
+read reisi_algus
+echo -n "Kaua oled?: "
+read paevad
+#kalk
+veel_reisi_paevad=$(( $paevad % 7 ))
+tagasi=$(( $reisi_algus + $veel_reisi_paevad ))
+echo "tagasi oled päeval number " $tagasi

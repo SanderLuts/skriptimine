@@ -1,8 +1,7 @@
 #!/bin/bash
 #skripti algus
-echo -e "sisesta arv: "
-read arv
-#check
+for (( arv=1 ; arv<21; arv++ ))
+do
 if [ $arv -eq 0 -o $arv -eq 1 ]; then
 echo $arv " ei ole algarv."
 else
@@ -19,4 +18,4 @@ else
 echo $arv " ei ole algarv."
 fi
 fi
-
+done

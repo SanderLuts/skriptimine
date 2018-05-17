@@ -1,15 +1,26 @@
 #!/bin/bash
 #skripti algus
+echo "mitu tärni tahad?"
+read t
 for (( i = 1; i <= 5; i++ ))
 do
+if (( $i == 1 || $i == 5))
+then
 echo -n $i". "
-	case $i in 
-"1") echo "*****";;
-"2") echo "*   *";;
-"3") echo "*   *";;
-"4") echo "*   *";;
-"5") echo "*****";;
-esac
-echo -n ""
+	for (( j = 1; j <= $t; j++ ))
+	do
+		echo -n "*"
+	done
+	echo ""
+else
+echo -n $i". "
+echo -n "*"
+	for (( q = 2; q <= 4; q++ ))
+	do
+	echo -n " "
+	done
+echo "*"
+fi
+
 done
 

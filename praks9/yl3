@@ -1,0 +1,15 @@
+#!/bin/bash
+#skripti algus
+for (( i = 1; i <= 5; i++ ))
+do
+echo -n $i". "
+	case $i in 
+"1") echo "*****";;
+"2") echo "*   *";;
+"3") echo "*   *";;
+"4") echo "*   *";;
+"5") echo "*****";;
+esac
+echo -n ""
+done
+

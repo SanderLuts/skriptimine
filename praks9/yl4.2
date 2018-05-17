@@ -1,0 +1,14 @@
+#!/bin/bash
+#skripti algus
+echo "mitu rida vaja? "
+read r
+for (( i = 1; i <= $r; i++ ))
+do
+echo -n $i". "
+for (( j = $r; j >= $i; j-- ))
+do
+echo -n "*"
+done
+echo ""
+done
+

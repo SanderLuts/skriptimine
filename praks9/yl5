@@ -1,0 +1,24 @@
+#!/bin/bash
+#skripti algus
+echo "mitu rida tahad? "
+read r
+var1=$r
+var2=$r
+for (( i = 1; i <= $r; i++ ))
+	do
+	echo -n $i". "
+		for (( j = 1; j <= $r-i; j++ ))
+		do
+			echo -n "o"
+		done
+			for (( k = 1; k <=i; k++ ))
+			do
+				echo -n "*"
+			done
+
+
+	echo ""
+
+done
+
+
